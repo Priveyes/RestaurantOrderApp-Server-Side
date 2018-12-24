@@ -1,21 +1,19 @@
 package com.example.paul_.foodappserver;
 
 import android.content.DialogInterface;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 
 import com.example.paul_.foodappserver.Common.Common;
 import com.example.paul_.foodappserver.Interface.ItemClickListener;
-import com.example.paul_.foodappserver.Model.Order;
 import com.example.paul_.foodappserver.Model.Request;
 import com.example.paul_.foodappserver.ViewHolder.OrderViewHolder;
-import com.firebase.ui.database.FirebaseIndexRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;

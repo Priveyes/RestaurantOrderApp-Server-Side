@@ -1,11 +1,11 @@
 package com.example.paul_.foodappserver;
 
-import android.content.Context;
-import android.support.test.InstrumentationRegistry;
-import android.support.test.runner.AndroidJUnit4;
+import android.content.*;
+import androidx.test.*;
+import androidx.test.runner.*;
 
-import org.junit.Test;
-import org.junit.runner.RunWith;
+import org.junit.*;
+import org.junit.runner.*;
 
 import static org.junit.Assert.*;
 
@@ -16,11 +16,11 @@ import static org.junit.Assert.*;
  */
 @RunWith(AndroidJUnit4.class)
 public class ExampleInstrumentedTest {
-    @Test
-    public void useAppContext() {
-        // Context of the app under test.
-        Context appContext = InstrumentationRegistry.getTargetContext();
+	@Test
+	public void useAppContext() {
+		// Context of the app under test.
+		Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.paul_.foodappserver", appContext.getPackageName());
-    }
+		assertEquals("com.example.paul_.foodappserver", appContext.getPackageName());
+	}
 }

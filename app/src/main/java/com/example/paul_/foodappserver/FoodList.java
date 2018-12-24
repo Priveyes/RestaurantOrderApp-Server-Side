@@ -1,44 +1,33 @@
 package com.example.paul_.foodappserver;
 
-import android.app.ProgressDialog;
-import android.content.DialogInterface;
-import android.content.Intent;
-import android.net.Uri;
-import android.support.annotation.NonNull;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.view.LayoutInflater;
-import android.view.MenuItem;
-import android.view.View;
-import android.widget.RelativeLayout;
-import android.widget.Toast;
+import android.app.*;
+import android.content.*;
+import android.net.*;
+import android.os.*;
+import android.view.*;
+import android.widget.*;
 
-import com.example.paul_.foodappserver.Common.Common;
-import com.example.paul_.foodappserver.Interface.ItemClickListener;
-import com.example.paul_.foodappserver.Model.Category;
-import com.example.paul_.foodappserver.Model.Food;
-import com.example.paul_.foodappserver.ViewHolder.FoodViewHolder;
-import com.firebase.ui.database.FirebaseIndexRecyclerAdapter;
-import com.firebase.ui.database.FirebaseRecyclerAdapter;
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.storage.FirebaseStorage;
-import com.google.firebase.storage.OnProgressListener;
-import com.google.firebase.storage.StorageReference;
-import com.google.firebase.storage.UploadTask;
-import com.rengwuxian.materialedittext.MaterialEditText;
-import com.squareup.picasso.Picasso;
+import androidx.annotation.*;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.*;
+import androidx.recyclerview.widget.*;
 
-import java.util.UUID;
+import com.example.paul_.foodappserver.Common.*;
+import com.example.paul_.foodappserver.Interface.*;
+import com.example.paul_.foodappserver.Model.*;
+import com.example.paul_.foodappserver.ViewHolder.*;
+import com.firebase.ui.database.*;
+import com.google.android.gms.tasks.*;
+import com.google.android.material.floatingactionbutton.*;
+import com.google.android.material.snackbar.*;
+import com.google.firebase.database.*;
+import com.google.firebase.storage.*;
+import com.rengwuxian.materialedittext.*;
+import com.squareup.picasso.*;
 
-import info.hoang8f.widget.FButton;
+import java.util.*;
+
+import info.hoang8f.widget.*;
 
 public class FoodList extends AppCompatActivity {
 
@@ -236,7 +225,7 @@ public class FoodList extends AppCompatActivity {
             @Override
             protected void populateViewHolder(FoodViewHolder viewHolder, Food model, int position) {
                 viewHolder.food_name.setText(model.getName());
-                Picasso.with(getBaseContext())
+                Picasso.get/*with*/(/*getBaseContext()*/)
                         .load(model.getImage())
                         .into(viewHolder.food_image);
 

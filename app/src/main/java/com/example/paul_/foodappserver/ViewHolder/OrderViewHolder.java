@@ -2,10 +2,9 @@ package com.example.paul_.foodappserver.ViewHolder;
 
 
 
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.ContextMenu;
 import android.view.View;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.example.paul_.foodappserver.Interface.ItemClickListener;

@@ -11,8 +11,8 @@
 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
         android:layout_marginBottom="12dp"
         android:orientation="horizontal"
         android:weightSum="1">
@@ -22,17 +22,16 @@
             android:id="@+id/btnSignIn"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_margin="8dp"
             android:layout_weight="1"
             android:text="Autentificare"
             android:textColor="@android:color/white"
-            android:layout_margin="8dp"
             app:buttonColor="@color/btnSignIn"
 
 
             />
 
     </LinearLayout>
-
 
 
 </RelativeLayout>

@@ -10,9 +10,9 @@
             android:title="Meniu" />
 
         <item
-        android:id="@+id/nav_cart"
-        android:icon="@drawable/ic_shopping_cart_black_24dp"
-        android:title="Cos" />
+            android:id="@+id/nav_cart"
+            android:icon="@drawable/ic_shopping_cart_black_24dp"
+            android:title="Cos" />
 
         <item
             android:id="@+id/nav_orders"
